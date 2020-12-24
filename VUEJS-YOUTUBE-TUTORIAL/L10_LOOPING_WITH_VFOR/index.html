@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VueJS Tutorials</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"> </script>
+  </head>
+  <body>
+    <div id="vue-app">
+        <h1>Looping Through Lists</h1>
+        <ul>
+          <li v-for = "charecter in charecters">{{charecter}}</li>
+        </ul>
+        <ul>
+          <li v-for = "(charecter,index) in charecters">{{index}}. {{charecter}}</li>
+        </ul>
+        <ul>
+          <li v-for = "ninja in ninjas">{{ ninja.name}} - {{ninja.age}}</li>
+        </ul>
+        <ul>
+          <li v-for = "(ninja,index) in ninjas">{{ index }}. {{ ninja.name }} - {{ ninja.age }}  </li>
+        </ul>
+
+        <div v-for="(ninja, index) in ninjas">
+          <h3>{{index}}.{{ninja.name}}</h3>
+          <p>{{ ninja.age }}</p>
+        </div>
+
+        <template v-for="(ninja, index) in ninjas">
+          <h3>{{index}}.{{ninja.name}}</h3>
+          <p>{{ ninja.age }}</p>
+        </template>
+
+        <template v-for = "ninja in ninjas">
+          <div v-for="(val,key) in ninja">
+            <p>{{key}} - {{val}}</p>
+          </div>
+        </template>
+    </div>
+
+    <script type="text/javascript" src = "app.js">
+    </script>
+  </body>
+</html>

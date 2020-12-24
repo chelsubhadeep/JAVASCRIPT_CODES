@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VueJs Tutorials</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  </head>
+  <body>
+      <div id="vue-app">
+        <h2>Refs</h2>
+        <input type="text" ref="input">
+        <button v-on:click = "readRefs">Submit</button>
+        <p v-if="output!=''">Your fav food {{ output }}</p>
+        <div ref="test">Hello</div>
+      </div>
+      <script src ="app.js"></script>
+  </body>
+</html>

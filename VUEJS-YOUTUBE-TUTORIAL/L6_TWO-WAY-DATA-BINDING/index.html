@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VueJS Tutorials</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id = "vue-app">
+        <h1>Keyboard Events</h1>
+        <label>Name:</label>
+        <input type = "text" v-model= "name"/>
+        <span>{{ name }}</span>
+        <label>Age:</label>
+        <input type = "text" v-model= "age"/>
+        <span>{{ age }}</span>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- v-bind: directive properties -->
+<!-- v-on is same as @ -->
