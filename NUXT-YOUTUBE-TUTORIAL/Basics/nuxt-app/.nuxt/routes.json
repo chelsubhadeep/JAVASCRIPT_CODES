@@ -1,0 +1,16 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "E:\\\\Jiya\\\\NUXT-YOUTUBE-TUTORIAL\\\\nuxt-app\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "_name": "_375f5f38"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "E:\\\\Jiya\\\\NUXT-YOUTUBE-TUTORIAL\\\\nuxt-app\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_571739fd"
+  }
+]
